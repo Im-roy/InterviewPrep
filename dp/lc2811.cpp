@@ -19,7 +19,6 @@ public:
         
         bool ans = false;
         int sum = getRequiredSum(low, high);
-        cout<<sum<<endl;
         if(sum - arr[low] >= m) 
             ans |= solve(low + 1, high);
         
